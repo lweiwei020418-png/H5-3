@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- 分享卡片配置 -->
+    <title>2026考研政治祈福报喜 - 网易有道考研</title>
+    <meta name="description" content="写下你的考研心愿，领取复试真题礼包！有道考研助你一战成硕。">
+    
+    <!-- Open Graph (用于社交分享显示卡片) -->
+    <meta property="og:title" content="2026考研政治祈福墙 - 助你高分上岸！">
+    <meta property="og:description" content="我在有道考研祈福墙许下了心愿，快来一起沾沾喜气，领取复试礼包！">
+    <meta property="og:image" id="og-image">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    
+    <!-- 导入配置文件 -->
+    <script type="module">
+        // 导入配置
+        import config from './config.js';
+        
+        // 创建全局配置对象
+        window.SITE_CONFIG = config;
+        
+        // 设置分享图片
+        document.getElementById('og-image').content = config.IMAGES.SHARE.THUMBNAIL || 'https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?q=80&w=400';
+    </script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .font-calligraphy { font-family: 'Ma Shan Zheng', cursive; }
+        .font-serif-zh { font-family: 'Noto Serif SC', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #FFD700, #B8860B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        /* 防止移动端长按弹出菜单影响交互 */
+        * { -webkit-touch-callout: none; -webkit-user-select: none; }
+        input, textarea { -webkit-user-select: text; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="bg-red-900 m-0 p-0 overflow-hidden">
+    <div id="root"></div>
+<script type="module">
+    // 仅增加加载容错，不影响任何展示效果
+    try {
+        import('./index.tsx');
+    } catch (e) {
+        console.error('加载React应用失败:', e);
+        // 仅控制台报错，不修改页面DOM，保留原有展示逻辑
+    }
+</script>
+</body>
+</html>
